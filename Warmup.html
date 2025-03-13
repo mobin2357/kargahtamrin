@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Welcome to My Simple Web Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+
+    <section id="home">
+      <h2>Home</h2>
+      <p>This is a simple and elegant webpage created with HTML and CSS.</p>
+    </section>
+
+    <div class="outer-box">
+        <div class="inner-box" style="background: #f0eac1;">
+          <h2>Simple Formula Evaluator</h2>
+          
+          <label for="name">Net Worth:</label>
+          <input type="text" id="worth" placeholder="Item Price">
+
+          <label for="count">Profit:</label>
+          <input type="text" id="profit" name="profit" placeholder="Enter count">
+
+          <label for="discount">Loss:</label>
+          <input type="text" id="loss" name="loss" placeholder="Enter discount">
+
+          <formula evaluator="worth+profit-loss">Result: <span id="result2">0</span></formula>
+        </div>
+
+        <div class="inner-box">
+            <h2>Simple Formula Evaluator</h2>
+            
+            <label for="name">Fee:</label>
+            <input type="text" id="fee" placeholder="Item Price">
+
+            <label for="count">Count:</label>
+            <input type="text" id="count" name="count" placeholder="Enter count">
+
+            <label for="discount">Discount:</label>
+            <input type="text" id="discount" name="discount" placeholder="Enter discount">
+
+            <formula evaluator="count*fee-discount">Result: <span id="result">0</span></formula>
+        </div>
+        
+        <div class="inner-box" style="background: #94f88d;">
+          <h2>Sales Tax Calculator</h2>
+          
+          <label for="name">Price:</label>
+          <input type="text" id="price" placeholder="Item Price">
+
+          <label for="count">Quantity:</label>
+          <input type="text" id="quantity" name="quantity" placeholder="Enter count">
+
+          <label for="discount">Tax Rate:</label>
+          <input type="text" id="taxRate" name="taxRate" placeholder="Enter discount">
+
+          <formula evaluator="price*quantity*taxRate+price*quantity">Result: <span id="result1">0</span></formula>
+        </div>
+    </div>
+    
+    <section id="about">
+      <h2>About</h2>
+      <p>Learn more about the purpose of this page and the inspiration behind it.</p>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Feel free to reach out with any questions or feedback!</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Simple Web Page. All rights reserved.</p>
+  </footer>
+  <script src="Warmup.js"></script>
+</body>
+</html>
