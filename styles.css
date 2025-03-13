@@ -74,8 +74,8 @@ footer {
 
 .outer-box {
   display: flex;
-/*   background-color: #a71fa7; */
-  background-color: #999;
+  background-color: #a71fa7;
+/*   background-color: #999; */
   justify-content: space-around;
   flex-wrap: wrap;
   align-items: center;
